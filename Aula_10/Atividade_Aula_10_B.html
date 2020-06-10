@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Atividade_Aula_10_B</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="Atividade_Aula_10_B.css"/>   
+    </head>
+    <body>
+        <!-- FORMULÁRIO 01 -->
+
+        <form action="Atividade_Aula_10_B.php" method="post" name="form1" id="form1" title="formulário_01" >
+
+            <fieldset class="tabela_01">
+                
+            <legend><span class="legenda_01">Outros Dados:</span></legend>
+
+            <table>
+                
+                <!-- MENSAGEM -->
+                <tr>
+                    <td> 
+                        <label for="mensagem">Mensagem:</label>
+                    </td>
+                    <td>
+                        <textarea id="mensagem" name="mensagem" rows="4" cols="25">
+                        </textarea>
+                    </td>
+                    
+                </tr>
+
+                <!-- IDADE -->
+                <tr>
+                    <td>
+                        <label for="idade"><span>idade</span></label>
+                    </td>
+                    <td>
+                        <select name="idade" id="idade">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- SEXO -->
+                <tr>
+                    <td>
+                        <label for="sexo"><span>sexo</span></label>
+                    </td>
+                    <td>
+                        <input  type="radio" 
+                                name="sexo" 
+                                id="sexom" 
+                                value="masculino" 
+                        /> 
+                        <label for="sexom">Masculino</label> 
+
+                        <input  type="radio" 
+                                name="sexo" 
+                                id="sexof" 
+                                value="feminino" 
+                        /> 
+                        <label for="sexof">Feminino</label>
+                    </td>
+                </tr>
+
+                <!-- LIVROS -->
+                <tr>
+                    <td>
+                        <label for="livros"><span>livros</span></label>
+                    </td>
+                    <td>
+                        <label for="php">PHP</label>
+                        <input  type="checkbox" 
+                                name="php" 
+                                id="php" 
+                                value="php" 
+                        />
+
+                        <label for="c">C</label>
+                        <input  type="checkbox" 
+                                name="c" 
+                                id="c" 
+                                value="c" 
+                        /> 
+
+                        <label for="java">Java</label>
+                        <input  type="checkbox" 
+                                name="java" 
+                                id="java" 
+                                value="java" 
+                        /> 
+                    </td>
+                </tr>                
+
+            </table>
+
+            <!-- ENVIAR -->
+            <tr>
+                <input type="submit" value="enviar"/>
+            </tr>
+
+            </fieldset>
+
+        </form>       
+
+    </body>
+
+</html>
+    

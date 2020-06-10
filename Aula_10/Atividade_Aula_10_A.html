@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Atividade_Aula_10_A</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="Atividade_Aula_10_A.css"/>   
+    </head>
+    <body>
+        <!-- FORMULÁRIO -->
+
+        <form action="Atividade_Aula_10_A.php" method="post" name="form1" id="form1" title="meu formulário" >
+
+            <fieldset class="tabela">
+                
+            <legend><span class="legenda">Dados Pessoais:</span></legend>
+
+            <table>
+                
+                <!-- NOME -->
+                <tr>
+                    <td>
+                        <label for="nome"><span class="titulo">Nome</span></label>
+                    </td>
+                    <td>
+                        <input  type = "text"
+                                name = "nome"
+                                id = "nome"
+                                title = "Digite seu nome"
+                                value = ""
+                                size = "30"
+                                maxlength = "35"
+                                class = "form_text"
+                                required
+                        />
+                    </td>
+                </tr>
+
+                <!-- SOBRENOME -->
+                <tr>
+                    <td>
+                        <label for="sobrenome"><span class="titulo">Sobrenome</span></label>
+                    </td>
+                    <td>
+                        <input  type = "text"
+                                name = "sobrenome"
+                                id = "sobrenome"
+                                title = "Digite seu sobrenome"
+                                value = ""
+                                size = "30"
+                                maxlength = "35"
+                                class = "form_text"
+                                required
+                        />
+                    </td>
+                </tr>
+
+                <!-- LOGIN -->
+                <tr>
+                    <td>
+                        <label for="login"><span class="titulo">login</span></label>
+                    </td>
+                    <td>
+                        <input  type = "password"
+                                name = "login"
+                                id = "login"
+                                title = "Digite seu login"
+                                size = "30"
+                                required
+                        />
+                    </td>
+                </tr>
+
+                 <!-- SENHA -->
+                 <tr>
+                    <td>
+                        <label for="senha"><span class="titulo">senha</span></label>
+                    </td>
+                    <td>
+                        <input  type = "password"
+                                name = "senha"
+                                id = "senha"
+                                title = "Digite seu senha"
+                                size = "13"
+                                required
+                        />
+                    </td>
+                </tr>                
+
+            </table>
+
+            <!-- ENVIAR -->
+            <tr>
+                <input type="submit" value="enviar"/>
+            </tr>
+
+            </fieldset>
+
+        </form>           
+
+    </body>
+
+</html>
+    

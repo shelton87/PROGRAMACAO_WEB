@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.legenda_01{
+    background-color: black;
+    color: white;
+}
+
+.tabela_01{
+    background-color: darkred;
+    width: 430px;
+}
+
+.tabela_02{
+    width: 580px;
+}
+
+.fonte_02{
+    font-size: 18px;
+}

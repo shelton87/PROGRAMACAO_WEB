@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Prova_G1_2</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="G1_Questao_02.css"/>
+</head>
+<body>
+
+    <form action="forms.html" method="post" name="form1" id="form1" title="formulário_questão_02_G1" >
+
+        <table class="tabela">
+
+            <!-- NOME COMPLETO -->
+            <tr>
+                <td>
+                    <label for="nome"><span>Nome Completo:</span></label>
+                </td>
+                <td>
+                    <input  type = "text"
+                            name = "nome"
+                            id = "nome"
+                            title = "Digite seu nome"
+                            value = ""
+                            size = "17"
+                            maxlength = "27"
+                            class = "form_text"
+                            required
+                    />
+                </td>
+
+                <!-- DATA DE NASCIMENTO -->
+                <td>
+                    <label for="nascimento"><span>Data de Nascimento:</span></label>
+                </td>
+                <td>                    
+                    <input type="date" name="nasc" id ="nasc" class="tabela"/>
+                </td>
+            </tr>
+
+            <!-- SENHA PESSOAL-->
+            <tr>
+                <td>
+                    <label for="senha"><span>Senha Pessoal:</span></label>
+                </td>
+                <td>
+                    <input  type = "password"
+                            name = "senha"
+                            id = "senha"
+                            title = "Digite sua senha"
+                            size = "17"
+                            required
+                    />
+                </td>
+
+                <!-- DEIXE SUA MENSAGEM -->
+                <td rowspan="8"> 
+                    <label for="dmensagem">Mensagem:</label>
+                </td>
+                <td rowspan="8">
+                    <textarea id="dmensagem" name="dmensagem" rows="8" cols="40">
+                    </textarea>
+                </td>
+            </tr>
+
+            <!-- REPITA A SENHA -->
+            <tr>
+                <td>
+                    <label for="rsenha"><span>Repita a Senha:</span></label>
+                </td>
+                <td>
+                    <input  type = "password"
+                            name = "rsenha"
+                            id = "rsenha"
+                            title = "Repita a senha digitada acima"
+                            size = "17"
+                            required
+                    />
+                </td>
+            </tr>
+
+            <!-- SEXO -->
+            <tr>
+                <td>
+                    <label for="sexo"><span>Sexo:</span></label>
+                </td>
+                <td>
+                    <input  type="radio" 
+                            name="sexo" 
+                            id="sexom" 
+                            value="masculino" 
+                    /> 
+                    <label for="sexom">Masculino</label> 
+
+                    <input  type="radio" 
+                            name="sexo" 
+                            id="sexof" 
+                            value="feminino" 
+                    /> 
+                    <label for="sexof">Feminino</label>
+                </td>
+            </tr>
+
+            <!-- LINGUAGENS PREFERIDAS -->
+            <tr>
+                <td>
+                    <label for="lprogramacao"><span>Linguagens preferidas:</span></label>
+                </td>
+                <td>
+                    <label for="c#">C#</label>
+                    <input  type="checkbox" 
+                            name="c#" 
+                            id="c#" 
+                            value="c#" 
+                    />
+
+                    <label for="java">Java</label>
+                    <input  type="checkbox" 
+                            name="java" 
+                            id="java" 
+                            value="java" 
+                    /> 
+
+                    <label for="golang">Golang</label>
+                    <input  type="checkbox" 
+                            name="golang" 
+                            id="golang" 
+                            value="golang" 
+                    /> 
+                </td>
+            </tr>
+        </table>
+
+        <!-- ENVIAR -->
+        <tr>
+            <input type="submit" value="enviar"/>
+        </tr>
+    </form>
+</body>
