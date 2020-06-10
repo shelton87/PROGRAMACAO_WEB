@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Atividade_Aula_13</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="Atividade_Aula_13.css"/>   
+    </head>
+    <body>
+       
+        <!-- FORMULÁRIO 02 -->
+
+        <form action="Atividade_Aula_13.php" method="post" name="form2" id="form2" title="formulário_02" >
+            
+            <fieldset class="tabela_02">
+                
+            <legend><span class="fonte_02">Dados Pessoais</span></legend>
+            
+            <table>
+
+                <!-- NOME -->
+                <tr>
+                    <td>
+                        <label for="nome"><span class="fonte_02">Nome:</span></label>
+                    </td>
+                    <td>
+                        <input  type = "text"
+                                name = "nome"
+                                id = "nome"
+                                title = "Digite seu nome"
+                                value = ""
+                                size = "22"
+                                maxlength = "27"
+                                class = "form_text"
+                                required
+                        />
+                    </td>
+                </tr>
+
+                <!-- SENHA -->
+                <tr>
+                    <td>
+                        <label for="senha"><span class="fonte_02">Senha:</span></label>
+                    </td>
+                    <td>
+                        <input  type = "password"
+                                name = "senha"
+                                id = "senha"
+                                title = "Digite sua senha"
+                                size = "22"
+                                required
+                        />
+                    </td>
+                </tr>
+
+                <!-- REPITA A SENHA -->
+                <tr>
+                    <td>
+                        <label for="rsenha"><span class="fonte_02">Repita a Senha:</span></label>
+                    </td>
+                    <td>
+                        <input  type = "password"
+                                name = "rsenha"
+                                id = "rsenha"
+                                title = "Repita a senha digitada acima"
+                                size = "22"
+                                required
+                        />
+                    </td>
+                </tr>
+
+                <!-- SEXO -->
+                <tr>
+                    <td>
+                        <label for="sexo"><span class="fonte_02">Sexo:</span></label>
+                    </td>
+                    <td>
+                        <input  type="radio" 
+                                name="sexo" 
+                                id="sexom" 
+                                value="masculino" 
+                        /> 
+                        <label for="sexom" class="fonte_02">Masculino</label> 
+
+                        <input  type="radio" 
+                                name="sexo" 
+                                id="sexof" 
+                                value="feminino" 
+                        /> 
+                        <label for="sexof" class="fonte_02">Feminino</label>
+                    </td>
+                </tr>
+
+                <!-- DATA DE NASCIMENTO -->
+                <tr>
+                    <td>
+                        <label for="nascimento"><span class="fonte_02">Data de Nascimento:</span></label>
+                    </td>
+                    <td>
+                        <input type="date" name="nasc" id ="nasc" />
+                    </td>
+                   
+                </tr>
+
+                <!-- DEIXE SUA MENSAGEM -->
+                <tr>
+                    <td> 
+                        <label for="dmensagem" class="fonte_02">Deixe sua Mensagem:</label>
+                    </td>
+                    <td>
+                        <textarea id="dmensagem" name="dmensagem" rows="8" cols="45">
+                        </textarea>
+                    </td>
+                    
+                </tr>
+
+                <!-- LINGUAGENS DE PROGRAMAÇÃO -->
+                <tr>
+                    <td>
+                        <label for="lprogramacao"><span class="fonte_02">Linguagens de Programação:</span></label>
+                    </td>
+                    <td>
+                        <label for="php" class="fonte_02">PHP</label>
+                        <input  type="checkbox" 
+                                name="php" 
+                                id="php" 
+                                value="php" 
+                        />
+
+                        <label for="vb" class="fonte_02">VB</label>
+                        <input  type="checkbox" 
+                                name="vb" 
+                                id="vb" 
+                                value="vb" 
+                        /> 
+
+                        <label for="c" class="fonte_02">C</label>
+                        <input  type="checkbox" 
+                                name="c" 
+                                id="c" 
+                                value="c" 
+                        /> 
+                    </td>
+                </tr>
+
+                
+
+            </table> 
+
+                <!-- ENVIAR PARA DB -->
+                <tr>
+                    <input type="submit" value="enviar" class="fonte_02"/>
+                </tr>
+
+            </fieldset>
+           
+        </form></br>
+
+        <!-- FORMULÁRIO PARA BUSCAR NO DB ******************************************************************-->
+        <form action="buscaDB_AtAula13.php" method="post" name="form1" id="form1" title="meu formulario" >
+            <fieldset class="tabela_02">
+                <legend><span>Busca</span></legend> 
+                <table>                    
+                    <tr>
+                      <td><label for="nome"><span> Busca por nome no BD:</span></label></td>
+                      <td><input type="text" name="nome" id="nome" pattern="[a-zA-Z0-9 ]+" size="50" required /></td>
+                    </tr>                    
+                    <tr><td><input type="submit" value="enviar"></td></tr>
+                </table>
+            </fieldset>
+        </form></br>
+
+        <!-- FORMULÁRIO PARA DELETAR NO DB ***************************************************************-->
+        <form action="deletaDB_AtAula13.php" method="post" name="form1" id="form1" title="meu formulario" >
+            <fieldset class="tabela_02">
+                <legend><span>Apaga</span></legend> 
+                <table>                    
+                    <tr>
+                      <td><label for="nome"><span> Apagar por nome no BD:</span></label></td>
+                      <td><input type="text" name="nome" id="nome" pattern="[a-zA-Z0-9 ]+" size="49" required /></td>
+                    </tr>                    
+                    <tr><td><input type="submit" value="enviar"></td></tr>
+                </table>
+            </fieldset>
+        </form></br>
+        
+        <!-- FORMULÁRIO ATUALIZAR DADOS CADASTRAIS *************************************************** -->
+
+        <form action="atualizaDB_AtAula13.php" method="post" name="form3" id="form3" title="atualiza_DB" >
+            
+            <fieldset class="tabela_02">
+                
+            <legend><span class="fonte_02">Atualizar Dados Pessoais</span></legend>
+            
+            <table>
+
+                <!-- NOME -->
+                <tr>
+                    <td>
+                        <label for="nome"><span class="fonte_02">Nome:</span></label>
+                    </td>
+                    <td>
+                        <input  type = "text"
+                                name = "nome"
+                                id = "nome"
+                                title = "Digite seu nome"
+                                value = ""
+                                size = "22"
+                                maxlength = "27"
+                                class = "form_text"
+                                required
+                        />
+                    </td>
+                </tr>
+
+                <!-- SENHA -->
+                <tr>
+                    <td>
+                        <label for="senha"><span class="fonte_02">Senha:</span></label>
+                    </td>
+                    <td>
+                        <input  type = "password"
+                                name = "senha"
+                                id = "senha"
+                                title = "Digite sua senha"
+                                size = "22"
+                                required
+                        />
+                    </td>
+                </tr>
+
+                <!-- REPITA A SENHA -->
+                <tr>
+                    <td>
+                        <label for="rsenha"><span class="fonte_02">Repita a Senha:</span></label>
+                    </td>
+                    <td>
+                        <input  type = "password"
+                                name = "rsenha"
+                                id = "rsenha"
+                                title = "Repita a senha digitada acima"
+                                size = "22"
+                                required
+                        />
+                    </td>
+                </tr>
+
+                <!-- SEXO -->
+                <tr>
+                    <td>
+                        <label for="sexo"><span class="fonte_02">Sexo:</span></label>
+                    </td>
+                    <td>
+                        <input  type="radio" 
+                                name="sexo" 
+                                id="sexom" 
+                                value="masculino" 
+                        /> 
+                        <label for="sexom" class="fonte_02">Masculino</label> 
+
+                        <input  type="radio" 
+                                name="sexo" 
+                                id="sexof" 
+                                value="feminino" 
+                        /> 
+                        <label for="sexof" class="fonte_02">Feminino</label>
+                    </td>
+                </tr>
+
+                <!-- DATA DE NASCIMENTO -->
+                <tr>
+                    <td>
+                        <label for="nascimento"><span class="fonte_02">Data de Nascimento:</span></label>
+                    </td>
+                    <td>
+                        <input type="date" name="nasc" id ="nasc" />
+                    </td>
+                   
+                </tr>
+
+                <!-- DEIXE SUA MENSAGEM -->
+                <tr>
+                    <td> 
+                        <label for="dmensagem" class="fonte_02">Deixe sua Mensagem:</label>
+                    </td>
+                    <td>
+                        <textarea id="dmensagem" name="dmensagem" rows="8" cols="45">
+                        </textarea>
+                    </td>
+                    
+                </tr>
+
+                <!-- LINGUAGENS DE PROGRAMAÇÃO -->
+                <tr>
+                    <td>
+                        <label for="lprogramacao"><span class="fonte_02">Linguagens de Programação:</span></label>
+                    </td>
+                    <td>
+                        <label for="php" class="fonte_02">PHP</label>
+                        <input  type="checkbox" 
+                                name="php" 
+                                id="php" 
+                                value="php" 
+                        />
+
+                        <label for="vb" class="fonte_02">VB</label>
+                        <input  type="checkbox" 
+                                name="vb" 
+                                id="vb" 
+                                value="vb" 
+                        /> 
+
+                        <label for="c" class="fonte_02">C</label>
+                        <input  type="checkbox" 
+                                name="c" 
+                                id="c" 
+                                value="c" 
+                        /> 
+                    </td>
+                </tr>
+
+                
+
+            </table> 
+
+                <!-- ENVIAR DADOS PARA SEREM ATUALIZADOS NO DB -->
+                <tr>
+                    <input type="submit" value="enviar" class="fonte_02"/>
+                </tr>
+
+            </fieldset>
+           
+        </form>
+
+    </body>
+
+</html>
